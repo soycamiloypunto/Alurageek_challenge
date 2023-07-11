@@ -7,7 +7,7 @@ const productos = document.querySelector("[data-lista-productos]");
 const contenidoProductoLocal = (id, imagen, nombre, precio) => {
     const contenido = `
             <div class="productos-existentes__container productos__imagen"
-                style="background: url('../assets/img/productos/${imagen}') center / 100% 100% no-repeat;" tabindex="0">
+                style="background: url('${imagen}') center / 100% 100% no-repeat;" tabindex="0">
                 <a class="productos-existentes__botones boton--eliminar" data-borrar-boton></a>
                 <a class="productos-existentes__botones boton--editar" data-editar-boton></a>
             </div>
@@ -33,7 +33,8 @@ const contenidoProductoServidor = (id, imagen, nombre, precio) => {
 }
 
 const obtenerProducto = (id, imagen, nombre, precio) => {
-    const rangoId = (id <= 18);
+    // const rangoId = (id <= 18);
+    const rangoId = (id);
     const producto = document.createElement("div");
     producto.setAttribute("class", "productos-existentes__producto productos__producto");
     if (rangoId) {
@@ -46,11 +47,14 @@ const obtenerProducto = (id, imagen, nombre, precio) => {
 
     const btnEliminar = producto.querySelector("[data-borrar-boton]");
     const btnEditar = producto.querySelector("[data-editar-boton]");
+
+    
     if (!login(estaAutenticado)) {
         btnEliminar.style.display = "none";
         btnEditar.style.display = "none";
     } else {
-        if (rangoId) {
+        console.log("rangoId: ", rangoId)
+        if (!rangoId) {
             btnEliminar.addEventListener("click", () => {
                 Swal.fire({
                     icon: "warning",

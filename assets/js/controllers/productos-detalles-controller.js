@@ -10,11 +10,11 @@ const seccionSimilares = document.querySelector("[data-productos-similares]");
 const mostrarImagen = (imagen) => {
     const regexImagenLocal = /^(([a-z\d]+)([-]?[a-z\d]+)+[.](jpeg|jpg|png))$/g;
     const esImagenLocal = regexImagenLocal.test(imagen);
-    if (esImagenLocal) {
-        imagenDetalles.setAttribute("style", `background: url('../assets/img/productos/${imagen}') center / 100% 100% no-repeat;`);
-    } else {
+    // if (esImagenLocal) {
+    //     imagenDetalles.setAttribute("style", `background: url('../assets/img/productos/${imagen}') center / 100% 100% no-repeat;`);
+    // } else {
         imagenDetalles.setAttribute("style", `background: url('${imagen}') center / 100% 100% no-repeat;`);
-    }
+    // }
 }
 
 const obtenerDetallesProducto = async () => {
@@ -63,7 +63,7 @@ const generarListaDesordenada = (productos) => {
 const contenidoProductosLocales = (producto) => {
     const contenido = `
         <div class="productos__producto">
-            <div class="productos__imagen" style="background: url('../assets/img/productos/${producto.imagen}') center / 100% 100% no-repeat;" tabindex="0"></div>
+            <div class="productos__imagen" style="background: url('${producto.imagen}') center / 100% 100% no-repeat;" tabindex="0"></div>
             <p class="productos__nombre parrafo" tabindex="0">${producto.nombre}</p>
             <p class="productos__precio parrafo" tabindex="0">${producto.precio}</p>
             <a class="productos__link link" href="./productos_detalles.html?id=${producto.id}" title="Ver más detalles" tabindex="0">Ver
@@ -72,6 +72,8 @@ const contenidoProductosLocales = (producto) => {
     `;
     return contenido;
 }
+
+// background: url('${producto.imagen}') center / 100% 100% no-repeat;
 
 const contenidoProductosServidor = (producto) => {
     const contenido = `

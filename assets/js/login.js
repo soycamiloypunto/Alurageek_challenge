@@ -11,12 +11,16 @@ if (window.location.href.includes("login.html")) {
     const loggearse = (event) => {
         event.preventDefault();
         userServices.listaUsuario()
-            .then((usuarios) => {
-                usuarios.forEach(({ correo, password }) => {
+            .then((usuario) => {
+                usuario.forEach(({ correo, password }) => {
                     const correoServidor = correo;
+                    console.log(correo)
                     const passwordServidor = password;
+                    console.log(password)
                     const correoUsuario = document.querySelector("[data-campo=correo]").value;
+                    console.log(correoUsuario)
                     const passwordUsuario = document.querySelector("[data-campo=password]").value;
+                    console.log(passwordUsuario)
                     if (correoUsuario == correoServidor && passwordUsuario == passwordServidor) {
                         sessionStorage.setItem("autenticado", "true");
                         window.location.href = "./productos_existencias.html";
