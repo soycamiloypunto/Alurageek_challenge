@@ -1,0 +1,154 @@
+{
+  "producto": [
+    {
+      "imagen": "figura-darth-vader.png",
+      "nombre": "Darth Vader",
+      "precio": "300.00",
+      "categoria": "Star Wars",
+      "desc": "Figura de colección Darth Vader.",
+      "id": 1
+    },
+    {
+      "imagen": "figura-grogu.png",
+      "nombre": "Grogu",
+      "precio": "799.99",
+      "categoria": "Star Wars",
+      "desc": "Figura de colección Grogu.",
+      "id": 2
+    },
+    {
+      "imagen": "figura-kylo-ren.png",
+      "nombre": "Kylo Ren",
+      "precio": "300.00",
+      "categoria": "Star Wars",
+      "desc": "Figura de colección Kylo Ren.",
+      "id": 3
+    },
+    {
+      "imagen": "figura-stormtrooper.png",
+      "nombre": "Storm Trooper",
+      "precio": "400.00",
+      "categoria": "Star Wars",
+      "desc": "Figura de colección Storm Trooper.",
+      "id": 4
+    },
+    {
+      "imagen": "figura-yoda.png",
+      "nombre": "Yoda",
+      "precio": "500.00",
+      "categoria": "Star Wars",
+      "desc": "Figura de colección Yoda.",
+      "id": 5
+    },
+    {
+      "imagen": "taza-stormtrooper.png",
+      "nombre": "Taza Stormtrooper",
+      "precio": "200.00",
+      "categoria": "Star Wars",
+      "desc": "Taza edición especial Storm Trooper.",
+      "id": 6
+    },
+    {
+      "imagen": "control-nintendo-switch.png",
+      "nombre": "Control Switch",
+      "precio": "960.00",
+      "categoria": "Consolas",
+      "desc": "Control de consola Nintendo Switch.",
+      "id": 7
+    },
+    {
+      "imagen": "control-xbox.png",
+      "nombre": "Control X-Box",
+      "precio": "900.00",
+      "categoria": "Consolas",
+      "desc": "Control de consola Xbox.",
+      "id": 8
+    },
+    {
+      "imagen": "gameboy-color.png",
+      "nombre": "Gameboy Color",
+      "precio": "1,500.00",
+      "categoria": "Consolas",
+      "desc": "Consola portátil Gameboy Color.",
+      "id": 9
+    },
+    {
+      "imagen": "nintendo-nes.png",
+      "nombre": "Nintendo Nes",
+      "precio": "2,890.00",
+      "categoria": "Consolas",
+      "desc": "Consola Nintento Nes.",
+      "id": 10
+    },
+    {
+      "imagen": "playstation-5.png",
+      "nombre": "PlayStation 5",
+      "precio": "9,999.00",
+      "categoria": "Consolas",
+      "desc": "Consola PlaySation 5.",
+      "id": 11
+    },
+    {
+      "imagen": "xbox-series-x.png",
+      "nombre": "Xbox Series X",
+      "precio": "10,999.00",
+      "categoria": "Consolas",
+      "desc": "Consola Xbox Series X.",
+      "id": 12
+    },
+    {
+      "imagen": "figura-sonic.png",
+      "nombre": "Sonic",
+      "precio": "567.00",
+      "categoria": "Diversos",
+      "desc": "Figura de colección Sonic.",
+      "id": 13
+    },
+    {
+      "imagen": "oculus-vr.png",
+      "nombre": "Oculus VR",
+      "precio": "789.00",
+      "categoria": "Diversos",
+      "desc": "Lentes de Realidad Virtual.",
+      "id": 14
+    },
+    {
+      "imagen": "peluche-pikachu.png",
+      "nombre": "Peluche Pikachu",
+      "precio": "400.00",
+      "categoria": "Diversos",
+      "desc": "Peluche de Pikachu de colección.",
+      "id": 15
+    },
+    {
+      "imagen": "playera-atari.png",
+      "nombre": "Playera Atari",
+      "precio": "300.00",
+      "categoria": "Diversos",
+      "desc": "Playera Atari color blanca.",
+      "id": 16
+    },
+    {
+      "imagen": "playera-snes.png",
+      "nombre": "Playera SNES",
+      "precio": "300.00",
+      "categoria": "Diversos",
+      "desc": "Playera de SNES.",
+      "id": 17
+    },
+    {
+      "imagen": "reloj.png",
+      "nombre": "Reloj Despertador",
+      "precio": "400.00",
+      "categoria": "Diversos",
+      "desc": "Reloj despertador en color rosa.",
+      "id": 18
+    }
+  ],
+  "usuario": [
+    {
+      "correo": "admin@alura.com",
+      "password": "admin1234"
+    }
+  ]
+}
